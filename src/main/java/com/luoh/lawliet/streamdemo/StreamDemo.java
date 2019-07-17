@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @Auther: luoh
@@ -46,6 +47,28 @@ public class StreamDemo {
                 .collect(Collectors.toList());
 
         System.out.println("listAddList:"+JSON.toJSONString(orderDetail3));
+
+
+
+        List<String> webs = Arrays.asList("voidcc.com", "voidmvn.com", "voidtool.com", "abbb.com", "biadu.com");
+        //webs 必须是List<String>
+        String allwebs = String.join(",", webs);
+        System.out.println(allwebs);
+
+        //stream
+        String allwebs2 = webs.stream().collect(Collectors.joining(","));
+        System.out.println(allwebs2);
+
+
+        String allwebs3 = webs.stream().collect(Collectors.joining(",","aaa "," bbb"));
+        System.out.println(allwebs3);
+
+
+        String strJoin = Stream.of("1", "2", "3", "4")
+                .collect(Collectors.joining(",", "[", "]"));
+        System.out.println("strJoin: " + strJoin);
+
+
     }
 
 
