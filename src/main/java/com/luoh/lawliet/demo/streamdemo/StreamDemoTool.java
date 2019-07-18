@@ -1,4 +1,4 @@
-package com.luoh.lawliet.streamdemo;
+package com.luoh.lawliet.demo.streamdemo;
 import java.util.Arrays;
 import java.util.List;
 

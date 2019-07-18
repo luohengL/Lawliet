@@ -1,4 +1,4 @@
-package com.luoh.lawliet.streamdemo;
+package com.luoh.lawliet.demo.streamdemo;
 
 import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
